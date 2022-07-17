@@ -1,0 +1,30 @@
+.search__button {
+    background-color: transparent;
+    border: 1px solid var(--blue);
+    color: var(--blue);
+    margin: 2rem 1rem;
+    padding: 1rem;
+}
+.search__button:hover {
+    background-color: var(--blue);
+    color: var(--white);
+}
+.form__button {
+    width: 100%;
+    height: 3rem;
+    border: 1px solid var(--blue);
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    background-color: var(--blue);
+    color: var(--white);
+    font-weight: bold;
+    cursor: pointer;
+    display: none;
+}
+.form__button:hover {
+    background-color: var(--white);
+    color: var(--blue);
+}
+.form__input:not(:placeholder-shown) + .form__button {
+    display: block;
+}

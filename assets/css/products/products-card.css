@@ -1,0 +1,29 @@
+.product__card {
+    line-height: 2rem;
+    height: auto;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    width: calc(50% - 1rem);
+}
+.product__card img {
+    width: 100%;
+    object-fit: cover;
+}
+.card__title {
+    color: var(--black);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.card__price {
+    color: var(--black);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.card__button {
+    color: var(--blue);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.product__card:nth-child(n+5) {
+    display: none;
+}

@@ -1,0 +1,13 @@
+/* reset css */
+* {
+    border: 0;
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    vertical-align: baseline;
+}
+body{
+    border: 1px solid #000;
+}

@@ -1,0 +1,22 @@
+
+.products__cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+.products__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+.products__title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.products__button {
+    color: var(--blue);
+    cursor: pointer;
+    font-size:1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+}

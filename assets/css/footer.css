@@ -1,0 +1,61 @@
+.footer {
+    background-color: var(--light-blue);
+}
+.footer__aboutUs{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    justify-content: center;
+    line-height: 3rem;
+    margin-bottom: 2rem;
+    padding: 0 7rem;
+    text-align: center;
+}
+.footer__contact{
+    display: flex;
+    flex-direction: column;
+    
+}
+.footer__contact h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-left: 2rem;
+}
+.contact__field{
+    padding: 1rem 2rem;
+    position: relative;
+}
+.contact__field label{
+    font-size: 1.3rem;
+    font-weight: 200;
+    position: absolute;
+    top: 2rem;
+    left: 2.5rem;
+}
+.contact__field input{
+   height: 5rem;
+}
+.contact__field input,
+.contact__field textarea{
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 3rem 0 .5rem .5rem;
+    width: 100%;
+}
+button {
+    background-color: var(--blue);
+    color: var(--white);
+    height: 3rem;
+    padding: 0.5rem 1.5rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+} 
+.footer__developer{
+    background-color: var(--white);
+    line-height: 2rem;
+    font-size: 1.4rem;
+    padding: 3rem;
+    text-align: center;
+    width: 100%;
+}
