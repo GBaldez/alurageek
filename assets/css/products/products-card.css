@@ -27,3 +27,19 @@
 .product__card:nth-child(n+5) {
     display: none;
 }
+
+@media screen and (min-width: 768px) {
+    .product__card {
+        width: calc(25% - .5rem);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .product__card {
+        width: calc(20% - 3rem);
+    }
+    .product__card:nth-child(n+5) {
+        display: inline-block;
+    }
+}
+    

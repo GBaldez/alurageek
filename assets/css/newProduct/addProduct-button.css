@@ -28,3 +28,11 @@
 .form__input:not(:placeholder-shown) + .form__button {
     display: block;
 }
+
+@media screen and (min-width: 1200px) {
+    .search__button{
+        font-size: 1.2rem;
+        padding: 3rem;
+    }
+}
+    

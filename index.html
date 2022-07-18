@@ -21,9 +21,11 @@
 <body>
     <header class="header">
         <img src="assets/images/Logo.svg" alt="logo da alura geek"></img>
-        <input class="search" type="text">
+        <div class="header__search">
+            <input class="search" type="text" placeholder="O que deseja encontrar?">
+            <i class="uil uil-search-alt"></i>
+        </div>
         <button class="button-login">Login</button>
-        <i class="uil uil-search-alt"></i>
     </header>
     <!-- banner -->
     <section class="banner">
@@ -213,14 +215,13 @@
                     <label for="mensagem">Escreva sua mensagem</label>
                     <textarea name="" id="mensagem" cols="60" rows="10"></textarea>
                 </div>
-                
-                <button type="submit">Enviar mensagem</button>
+                <button class="contact__button" type="submit">Enviar mensagem</button>
             </form>
+        </div>
         <section class="footer__developer">
             <p>Desenvolvido por Gabriel Baldez</p>
             <p>2022</p>
         </section>
-    </footer>
-    
+    </footer>  
 </body>
 </html>

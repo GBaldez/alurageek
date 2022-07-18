@@ -1,10 +1,37 @@
 .search {
     background-color: var(--background-search);
+    border-radius: 2rem;
     display: none;
+    padding: 1rem;
+    width: 100%;
 }
-
+.header__search{
+    order: 3;
+}
 .uil-search-alt{
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--black);
 }
+
+@media (min-width: 768px) {
+    .header__search {
+        position: relative;
+        width: 20rem;
+    }
+    .search{
+        display: inline-block;
+    }
+    .uil-search-alt{
+        left: 90%;
+        position:absolute;
+        top:25%;
+    }   
+}
+
+@media screen and (min-width: 1200px) {
+    .header__search {
+        width: 30rem;
+    }
+}
+    

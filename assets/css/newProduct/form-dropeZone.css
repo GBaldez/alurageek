@@ -27,3 +27,10 @@
     margin: 12px 12px 12px 0;
     background-color: var(--blue);
 }
+@media screen and (min-width: 1200px) {
+    .form__dropZone {
+        width: 50%;
+        margin-bottom: 2rem;
+    }
+}
+    

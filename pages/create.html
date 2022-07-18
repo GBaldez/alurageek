@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../assets/css/global.css">
     <link rel="stylesheet" href="../assets/css/header/header.css">
     <link rel="stylesheet" href="../assets/css/header/search-input.css">
+    <link rel="stylesheet" href="../assets/css/header/button-login.css">
     <link rel="stylesheet" href="../assets/css/footer.css">
     <link rel="stylesheet" href="../assets/css/newProduct/addNewProduct.css">
     <link rel="stylesheet" href="../assets/css/newProduct/addProduct-button.css">
@@ -19,8 +20,11 @@
 <body>
     <header class="header">
         <img src="../assets/images/Logo.svg" alt="logo da alura geek"></img>
-        <input class="search" type="text">
-        <i class="uil uil-search-alt"></i>
+        <div class="header__search">
+            <input class="search" type="text" placeholder="O que deseja encontrar?">
+            <i class="uil uil-search-alt"></i>
+        </div>
+        <button class="button-login">Login</button>
     </header>
     
     <main class="container">
@@ -32,7 +36,7 @@
                     <p class="dropZone__text">Arraste para adicionar uma imagem para o produto</p>
                     <input class="dropZone__input"  accept="image/*">   
                 </div>
-
+                <span class="form__span">Ou</span>
             <button class="search__button" type="button" id="addImg">Procurar no seu computador</button>
             
             <input class="form__input" type="text" name="name" placeholder="Nome do produto">
@@ -45,12 +49,14 @@
     <footer class="footer">
         <div class="footer__aboutUs">
             <img class="footer__logo" src="../assets/images/Logo.svg" alt="logo">
-            <p>Quem somos nós</p>
-            <p>Política de privacidade</p>
-            <p>Programa fidelidade</p>
-            <p>Nossas lojas</p>
-            <p>Quero ser franqueado</p>
-            <p>Anuncie aqui</p>
+            <div>
+                <p>Quem somos nós</p>
+                <p>Política de privacidade</p>
+                <p>Programa fidelidade</p>
+                <p>Nossas lojas</p>
+                <p>Quero ser franqueado</p>
+                <p>Anuncie aqui</p>
+            </div>
         </div>
         <!-- contact form -->
         <div class="footer__contact">
@@ -64,9 +70,9 @@
                     <label for="mensagem">Escreva sua mensagem</label>
                     <textarea name="" id="mensagem" cols="60" rows="10"></textarea>
                 </div>
-                
-                <button type="submit">Enviar mensagem</button>
+                <button class="contact__button"  type="submit">Enviar mensagem</button>
             </form>
+        </div>
         <section class="footer__developer">
             <p>Desenvolvido por Gabriel Baldez</p>
             <p>2022</p>

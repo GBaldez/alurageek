@@ -43,7 +43,7 @@
     padding: 3rem 0 .5rem .5rem;
     width: 100%;
 }
-button {
+.contact__button {
     background-color: var(--blue);
     color: var(--white);
     height: 3rem;
@@ -59,3 +59,37 @@ button {
     text-align: center;
     width: 100%;
 }
+
+@media (min-width: 768px) {
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer__aboutUs{
+        justify-content: start;
+        padding: 2rem 0 0 2rem;
+        text-align: left;
+        width:50%;
+    }
+    .footer__contact{
+        padding-top: 2rem;
+        width:50%;
+    }
+    .footer__logo{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer{
+        justify-content: space-around;
+    }
+    .footer__aboutUs {
+        flex-direction: row;
+    }
+    .footer__logo {
+        align-self: flex-start;
+        margin-right: 2rem;
+    }
+}
+    

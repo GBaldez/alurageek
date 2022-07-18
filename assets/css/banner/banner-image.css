@@ -12,3 +12,25 @@
     background-size: cover;
     height: 100%;
 }
+
+@media (min-width: 768px) {
+    .banner{
+        height: 21rem;
+    }
+    .banner__content {
+        padding-left: 2rem;
+        padding-top: 9rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .banner{
+        height: 25rem;
+    }
+    .banner__content {
+        padding-left: 8rem;
+        padding-top: 12rem;
+        
+    }
+}
+    

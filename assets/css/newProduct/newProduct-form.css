@@ -14,3 +14,17 @@
 .form__input:focus {
     outline: none;
 }
+.form__span {
+    color: var(--blue);
+    font-size: 2rem;
+}
+
+@media screen and (min-width: 1200px) {
+    .container__form {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+    
