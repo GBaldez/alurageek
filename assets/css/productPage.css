@@ -4,6 +4,7 @@
 }
 .product__image {
     height: 50%;
+    object-fit: cover;
 }
 .product__info {
     padding-left: 2rem;

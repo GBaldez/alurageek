@@ -6,6 +6,7 @@
     width: calc(50% - 1rem);
 }
 .product__card img {
+    height:50%;
     width: 100%;
     object-fit: cover;
 }
