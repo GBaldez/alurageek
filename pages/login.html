@@ -25,8 +25,13 @@
     <main class="container">
         <h1 class="container__title">Iniciar Sessão</h1>
         <form class="container__form" action="">
-            <input id="email" class="form__input" type="text" name="email" placeholder="Escreva seu email">
-            <input id="password"  class="form__input" type="password" name="password" placeholder="Escreva sua senha" minlength="6" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?!.*[@$!%*?&]).{6,12}$" title="A senha deve conter de 6 a 12 caracteres, pelo menos um número, uma letra maiúscula e não deve conter símbolos">
+            <div>
+                <input data-type="email" id="email" class="form__input" type="text" name="email" placeholder="Escreva seu email">
+            </div>
+            <div>
+                <input data-type="password" id="password"  class="form__input" type="password" name="password" placeholder="Escreva sua senha" minlength="6" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?!.*[@$!%*?&]).{6,12}$" title="A senha deve conter de 6 a 12 caracteres, pelo menos um número, uma letra maiúscula e não deve conter símbolos">
+            </div>       
+            
             <button class="form__button">Entrar</button>
         </form>
     </main>
@@ -52,7 +57,7 @@
                 </div>
                 <div class="contact__field">
                     <label for="mensagem">Escreva sua mensagem</label>
-                    <textarea name="" id="mensagem" cols="60" rows="10"></textarea>
+                    <textarea data-type="message" name="" id="mensagem" cols="60" rows="10"></textarea>
                 </div>
                 <button class="contact__button"  type="submit">Enviar mensagem</button>
             </form>
@@ -62,6 +67,6 @@
             <p>2022</p>
         </section>
     </footer>
-    <script src="../assets/scripts/validateForm.js"></script>
+    <script type="module" src="../assets/scripts/app.js"></script>
 </body>
 </html>

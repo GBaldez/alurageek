@@ -2,10 +2,15 @@
     background-color: var(--background-search);
     display: flex;
     flex-direction: column;
+    height: 80vh;
     justify-content: center;
     align-items: center;
     padding: 5rem 0;
 }
+.container__form {
+    width: 40%;
+}
+
 .container__title {
     font-size: 2.5rem;
     font-weight: bold;
@@ -17,7 +22,7 @@
     border: 1px solid #ccc;
     border-radius: 0.25rem;
     padding: 0.5rem;
-    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 .form__input:focus {
     outline: none;

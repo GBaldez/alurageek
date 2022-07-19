@@ -14,7 +14,8 @@ export const validation = (input) => {
 const validators = {
     name: (input) => validateName(input),
     email: (input) => validateEmail(input),
-    password: (input) => validatePassword(input)
+    password: (input) => validatePassword(input),
+    message: (input) => validateMessage(input)
 }
 const messagesError = {
     name: {
@@ -38,6 +39,7 @@ const messagesError = {
 }
 
 const showError = (input, message) => {
+    if(input.classList.contains('invalid')) return;
     const inputType = input.dataset.type;
     const errorMessage = messagesError[inputType][message];
     input.setCustomValidity(errorMessage);
@@ -52,17 +54,18 @@ const validateName = (name) => {
     else name.setCustomValidity('');
     }
 
-export const validateMessage = (message) => {
+const validateMessage = (message) => {
         if (message.value === '' || message.value > 120) showError(message, message.validity.tooLong ? 'tooLong' : 'valueMissing');
         else message.value.setCustomValidity('');
     }
 
 const validateEmail = (email) => {
-    if (email.value === '' || !email.value.includes('@')) email.value.setCustomValidity('Por favor, insira um e-mail válido.');
+    const emailValid = new RegExp( /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/);
+    if (email.value === '' || !emailValid.test(email.value)) showError(email, email.validity.typeMismatch ? 'typeMismatch' : 'valueMissing');
     else email.value.setCustomValidity('');
 }
 
 const validatePassword = (password) => {
-    if (password.value === '' || password.value.length < 6) password.value.setCustomValidity('Por favor, insira uma senha dentro dos requisitos.');
+    if (password.value === '' || password.value.length < 6 || password.value.length > 12) showError(password, password.validity.tooShort ? 'tooShort' : password.validity.tooLong ? 'tooLong' : password.validity.patternMismatch ? 'patternMismatch' : 'valueMissing');
     else password.value.setCustomValidity('');
 }

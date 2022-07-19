@@ -1,4 +1,4 @@
-import { validateMessage, validation } from "./validateForm.js";
+import { validation } from "./validateForm.js";
 
 const inputs = document.querySelectorAll('input');
 const message = document.querySelector('textarea');
@@ -10,7 +10,7 @@ inputs.forEach(input => {
 });
 
 message.addEventListener('blur', () => {
-    validateMessage(message);
+    validation(message);
 });
 
 console.log('working');
