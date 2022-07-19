@@ -25,7 +25,9 @@
             <input class="search" type="text" placeholder="O que deseja encontrar?">
             <i class="uil uil-search-alt"></i>
         </div>
-        <button class="button-login">Login</button>
+        <a href="./pages/login.html">
+            <button class="button-login">Login</button>
+        </a>
     </header>
     <!-- banner -->
     <section class="banner">
@@ -33,7 +35,7 @@
             <div class="banner__content">
                 <h1 class="banner__title">Dezembro Promocional</h1>
                 <p class="banner__description">Produtos selecionados com 33% de desconto</p>
-                <a href="#" class="banner__button">Ver consoles</a>
+                <a href="#consoles" class="banner__button">Ver consoles</a>
             </div>
 
         </div>
@@ -92,7 +94,7 @@
         </section>
         <!-- END OF STAR WARS PRODUCTS LIST -->
         <!-- CONSOLES SECTION -->
-        <div class="products__header">
+        <div id="consoles" class="products__header">
             <h2 class="products__title">Consoles</h2>
             <a href="#" class="products__button">Ver tudo <i class="uil uil-arrow-right"></i></a>
         </div>
@@ -208,14 +210,14 @@
         <!-- contact form -->
         <div class="footer__contact">
             <h3>Fale conosco</h3>
-            <form action="">
+            <form id="contact" action="">
                 <div class="contact__field">
                     <label for="name">Nome</label>
-                    <input type="text">
+                    <input class="field__name" data-type="name" type="text">
                 </div>
                 <div class="contact__field">
                     <label for="mensagem">Escreva sua mensagem</label>
-                    <textarea name="" id="mensagem" cols="60" rows="10"></textarea>
+                    <textarea data-type="message" name="" id="mensagem" cols="60" rows="10"></textarea>
                 </div>
                 <button class="contact__button"  type="submit">Enviar mensagem</button>
             </form>
@@ -225,5 +227,7 @@
             <p>2022</p>
         </section>
     </footer>
+    <!-- <script type="module" src="assets/scripts/validateForm.js"></script> -->
+    <script type="module" src="assets/scripts/app.js"></script>
 </body>
 </html>

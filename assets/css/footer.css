@@ -93,3 +93,13 @@
     }
 }
     
+.invalid{
+    border: 1px solid var(--invalid-input);
+    box-shadow: inset 0 0 10px var(--invalid-input);
+    margin-bottom: 0.5rem;
+}
+.error {
+    color: var(--invalid-input);
+    font-size: 1.2rem;
+    font-weight: 700;
+}

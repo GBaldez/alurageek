@@ -25,8 +25,8 @@
     <main class="container">
         <h1 class="container__title">Iniciar Sessão</h1>
         <form class="container__form" action="">
-            <input class="form__input" type="text" name="email" placeholder="Escreva seu email">
-            <input class="form__input" type="password" name="password" placeholder="Escreva sua senha">
+            <input id="email" class="form__input" type="text" name="email" placeholder="Escreva seu email">
+            <input id="password"  class="form__input" type="password" name="password" placeholder="Escreva sua senha" minlength="6" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?!.*[@$!%*?&]).{6,12}$" title="A senha deve conter de 6 a 12 caracteres, pelo menos um número, uma letra maiúscula e não deve conter símbolos">
             <button class="form__button">Entrar</button>
         </form>
     </main>
@@ -48,7 +48,7 @@
             <form action="">
                 <div class="contact__field">
                     <label for="name">Nome</label>
-                    <input type="text">
+                    <input data-type="name" type="text">
                 </div>
                 <div class="contact__field">
                     <label for="mensagem">Escreva sua mensagem</label>
@@ -62,6 +62,6 @@
             <p>2022</p>
         </section>
     </footer>
-    
+    <script src="../assets/scripts/validateForm.js"></script>
 </body>
 </html>

@@ -3,6 +3,7 @@
 :root {
     --background-search: rgb(243, 243, 243);
     --blue: #2A7AE4;
+    --invalid-input: #F44336;
     --gray: #A2A2A2;
     --black: #464646;
     --light-blue: #EAF2FD; 

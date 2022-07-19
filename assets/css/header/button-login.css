@@ -2,13 +2,18 @@
     background-color: transparent;
     border: 1px solid var(--blue);
     color: var(--blue);
+    cursor: pointer;
     font-size: 1.5rem;
     font-weight: bold;
     padding: 1rem 3rem;
 }
+.button-login:hover {
+    background-color: var(--blue);
+    color: var(--white);
+}
 
 @media (min-width: 768px) {
-    .button-login {
+    a {
         order: 3;
     }
 }
